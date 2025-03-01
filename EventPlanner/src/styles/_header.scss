@@ -1,23 +1,23 @@
-@use 'variables';
+@use "variables";
 
 header {
-    background: variables.$background-color;
-    color: variables.$text-color;
-    padding: 20px;
-    text-align: center;
-    font-size: 1.8rem;
+  background: variables.$background-color;
+  color: variables.$text-color;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  position: relative;
 }
 
 .ul-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 
-
-.li-nav {
+  .li-nav {
     font-family: variables.$font-main;
     list-style: none;
     display: flex;
@@ -26,11 +26,38 @@ header {
     color: variables.$text-color;
     cursor: pointer;
 
-  &:hover{
-    text-decoration: underline;
-    color: variables.$text-color;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 1px; 
+    &:hover {
+      text-decoration: underline;
+      color: variables.$text-color;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+    }
   }
 }
+
+.header-left {
+  display: flex;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  margin: 30px;
+}
+
+.header-right {
+    display: flex;
+    position: absolute;
+    top: 0; 
+    right: 0;
+    align-items: center; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    margin: 30px;
+    gap: 30px;
+}
+
+.contact-button{
+    color: black;
+    font-family: variables.$font-main;
+    font-size: 15px;
+    cursor: pointer;
 }

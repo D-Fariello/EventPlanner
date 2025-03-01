@@ -22,3 +22,9 @@ a {
   color: variables.$text-color;
   text-decoration: none;
 }
+
+button {
+    border: none;
+    padding: 20px;
+    background-color: white;
+}

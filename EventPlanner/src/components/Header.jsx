@@ -4,6 +4,15 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header>
+      <div className="header-left">
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-instagram"></i>
+        </a>
+      </div>
       <h1>
         <Link to="/">Riviera Féminine</Link>
       </h1>
@@ -23,6 +32,19 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+
+      <div className="header-right">
+        <Link to="/carrello">
+          <i className="fas fa-shopping-cart"></i>{" "}
+          {/* Usa la tua icona preferita */}
+        </Link>
+
+        <button>
+          <Link className="contact-button" to="/contact">
+            Contactez-moi
+          </Link>
+        </button>
+      </div>
     </header>
   );
 };
