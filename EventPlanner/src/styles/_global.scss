@@ -1,0 +1,24 @@
+@use "variables";
+
+body {
+  font-family: variables.$font-main;
+  background-color: variables.$background-color;
+  color: variables.$text-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: variables.$font-heading;
+  color: variables.$text-color;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 21px;
+}
+
+a {
+  color: variables.$text-color;
+  text-decoration: none;
+}

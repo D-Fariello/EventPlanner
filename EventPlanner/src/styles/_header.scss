@@ -1,0 +1,36 @@
+@use 'variables';
+
+header {
+    background: variables.$background-color;
+    color: variables.$text-color;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.ul-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+.li-nav {
+    font-family: variables.$font-main;
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    font-weight: lighter;
+    color: variables.$text-color;
+    cursor: pointer;
+
+  &:hover{
+    text-decoration: underline;
+    color: variables.$text-color;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px; 
+  }
+}
+}
