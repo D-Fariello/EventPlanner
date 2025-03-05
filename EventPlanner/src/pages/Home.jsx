@@ -64,6 +64,60 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Second Section */}
+      <section className="home-event-planning-section">
+        <div className="home-event-planning-row">
+          <h3 className="home-event-planning-right-title">
+            Organisez un événement privé inoubliable
+          </h3>
+        </div>
+
+        <div className="event-options">
+          <div className="image-div">
+            <img
+              className="home-event-planning-image-left-img"
+              src="/images/eatingFood.png"
+              alt="Event Planning"
+            />
+          </div>
+          {/* Tentez une nouvelle expérience Section */}
+          <div className="event-options-column">
+            <h3 className="event-options-column-title">
+              Tentez une nouvelle expérience
+            </h3>
+            <p className="event-options-column-text">
+              Envie d’un moment unique entre amies ou en famille ? Laissez-vous
+              inspirer par mes idées d’événements privés : dîners élégants,
+              journées en mer, ateliers créatifs… Faites de chaque occasion un
+              souvenir mémorable.
+            </p>
+            <a
+              href="/decouvrir-des-idees-evenements"
+              className="home-event-planning-link"
+            >
+              Découvrir des idées d’événements
+            </a>
+          </div>
+          {/* Un événement sur mesure Section */}
+          <div className="event-options-column">
+            <h3 className="event-options-column-title">
+              Un événement sur mesure
+            </h3>
+            <p className="event-options-column-text">
+              Que ce soit un anniversaire, une soirée bien-être ou une escapade
+              exclusive, je vous aide à organiser l’expérience parfaite, adaptée
+              à vos envies et à votre budget.
+            </p>
+            <a
+              href="/decouvrir-des-idees-evenements"
+              className="home-event-planning-link"
+            >
+              Découvrir des idées d’événements
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
