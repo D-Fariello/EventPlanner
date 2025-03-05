@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Apropos = () => {
   return (
@@ -25,7 +26,11 @@ const Apropos = () => {
             sportive ou un atelier inspirant, chaque événement est pensé pour
             créer des connexions authentiques.
           </p>
-          <button className="button">Prendre rendez-vous</button>
+          <button>
+            <Link className="contact-button" to="/contact">
+              Prendre rendez-vous
+            </Link>
+          </button>
         </div>
       </div>
 
