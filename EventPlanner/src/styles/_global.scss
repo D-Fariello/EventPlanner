@@ -18,6 +18,15 @@ h3 {
   font-size: 21px;
 }
 
+p {
+  font-size: 18px;
+  font-family: variables.$font-paragraph;
+  font-weight: lighter;
+  white-space: break-spaces;
+  font-style:normal;
+
+}
+
 a {
   color: variables.$text-color;
   text-decoration: none;
