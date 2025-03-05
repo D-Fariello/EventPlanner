@@ -1,24 +1,27 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import UpcomingEvent from "./components/UpcomingEvent";
-import EventCalendar from "./components/Calendar";
-import EventsList from "./components/EventsList";
-import ContactSection from "./components/ContactSection";
+import Home from "./pages/Home";
+import Events from "./pages/Events";
 import "./styles/main.scss";
+import Boutique from "./pages/Boutique";
+import Contact from "./pages/Contact";
+import Apropos from "./pages/Apropos";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
-      <UpcomingEvent />
-      <div style={{ display: "flex" }}>
-        <EventCalendar />
-        <EventsList />
-      </div>
-      <ContactSection />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/a-propos" element={<Apropos />} />
+        <Route path="/boutique" element={<Boutique />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
-    </div>
+    </>
   );
 };
 

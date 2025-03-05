@@ -1,7 +1,7 @@
 import React from "react";
-import ContactForm from "./ContactForm";
+import ContactForm from "../components/ContactForm";
 
-const ContactSection = () => {
+const Contact = () => {
   return (
     <div style={{ display: "flex", justifyContent: "space-between" }}>
       <div>
@@ -15,4 +15,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default Contact;
