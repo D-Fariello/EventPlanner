@@ -12,8 +12,9 @@ const Footer = () => {
         </p>
         <div className="subscription-input">
           <input
+            id="email"
             type="email"
-            placeholder="Your email"
+            placeholder="Adresse email"
             className="email-input"
           />
           <button className="subscribe-button">S'inscrire</button>
