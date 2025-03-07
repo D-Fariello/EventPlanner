@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import eventsData from "../utils/eventsData";
 import { Link } from "react-router-dom";
 
-const Events = () => {
+const Events = ({ addToCart }) => {
+  const [quantities, setQuantities] = useState(eventsData.map(() => 1));
+
+  const handleIncrement = (index) => {
+    setQuantities((prev) => prev.map((q, i) => (i === index ? q + 1 : q)));
+  };
+
+  const handleDecrement = (index) => {
+    setQuantities((prev) =>
+      prev.map((q, i) => (i === index && q > 1 ? q - 1 : q))
+    );
+  };
+
   return (
     <div className="event-first-section">
-      {/* Sezione Hero con immagine e testo */}
       <div>
         <img
           className="event-img"
@@ -18,7 +29,6 @@ const Events = () => {
         </h1>
       </div>
 
-      {/* Sezione Eventi con 4 divisioni */}
       <div className="events-information">
         {eventsData.map((event, index) => (
           <div className="events-list" key={index}>
@@ -30,12 +40,18 @@ const Events = () => {
             <h2>{event.title}</h2>
             <h3>{event.subtitle}</h3>
             <p>{event.description}</p>
+
             <div className="quantity-input">
-              <button>-</button>
-              <span className="quantity-number">1</span>
-              <button>+</button>
+              <button onClick={() => handleDecrement(index)}>-</button>
+              <span className="quantity-number">{quantities[index]}</span>
+              <button onClick={() => handleIncrement(index)}>+</button>
             </div>
-            <button>
+
+            <button
+              onClick={() =>
+                addToCart({ ...event, quantity: quantities[index] })
+              }
+            >
               <Link className="contact-button" to="/boutique">
                 Ajouter au panier
               </Link>

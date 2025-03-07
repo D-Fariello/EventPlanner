@@ -34,7 +34,7 @@ const Header = () => {
       </nav>
 
       <div className="header-right">
-        <Link to="/cart">
+        <Link to="/boutique">
           <i className="fas fa-shopping-cart"></i>{" "}
           {/* Usa la tua icona preferita */}
         </Link>
