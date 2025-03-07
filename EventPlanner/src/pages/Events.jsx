@@ -32,7 +32,7 @@ const Events = () => {
             <p>{event.description}</p>
             <div className="quantity-input">
               <button>-</button>
-              <span>1</span>
+              <span className="quantity-number">1</span>
               <button>+</button>
             </div>
             <button>

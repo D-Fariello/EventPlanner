@@ -3,11 +3,12 @@ import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "space-between" }}>
-      <div>
-        <h2>Evento Privato</h2>
-        <p>
-          Se vuoi un evento privato e personalizzato non esitare a contattarmi.
+    <div className="contact-div">
+      <div className="contact-me-info">
+        <h2 className="contact-h2">Me contacter</h2>
+        <p className="contact-paragraph">
+          Pour toute demande de renseignements sur les événements ou pour le
+          contact presse, n’hésitez pas à me contacter ici.
         </p>
       </div>
       <ContactForm />

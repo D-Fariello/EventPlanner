@@ -34,7 +34,7 @@ const Home = () => {
               Le choix idéal pour des événements privés et personnalisés,
               adaptés à vos envies et à votre style de vie.
             </p>
-            <a href="/en-savoir-plus" className="home-link">
+            <a href="/events" className="home-link">
               En savoir plus
             </a>
           </div>
@@ -46,7 +46,7 @@ const Home = () => {
               Découvrez des événements exclusifs pour partager des moments
               uniques et créer de nouvelles connexions.
             </p>
-            <a href="/en-savoir-plus" className="home-link">
+            <a href="/events" className="home-link">
               En savoir plus
             </a>
           </div>
@@ -58,7 +58,7 @@ const Home = () => {
               Plongez dans des expériences inoubliables avec nos soirées,
               ateliers et escapades spécialement conçus pour vous.
             </p>
-            <a href="/en-savoir-plus" className="home-link">
+            <a href="/events" className="home-link">
               En savoir plus
             </a>
           </div>
@@ -92,10 +92,7 @@ const Home = () => {
               journées en mer, ateliers créatifs… Faites de chaque occasion un
               souvenir mémorable.
             </p>
-            <a
-              href="/decouvrir-des-idees-evenements"
-              className="home-event-planning-link"
-            >
+            <a href="/events" className="home-event-planning-link">
               Découvrir des idées d’événements
             </a>
           </div>
@@ -109,10 +106,7 @@ const Home = () => {
               exclusive, je vous aide à organiser l’expérience parfaite, adaptée
               à vos envies et à votre budget.
             </p>
-            <a
-              href="/decouvrir-des-idees-evenements"
-              className="home-event-planning-link"
-            >
+            <a href="/events" className="home-event-planning-link">
               Découvrir des idées d’événements
             </a>
           </div>

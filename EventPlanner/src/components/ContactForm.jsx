@@ -2,13 +2,35 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <form>
-      <div>
-        <label htmlFor="name">Nome:</label>
-        <input type="text" id="name" name="name" required autoComplete="name" />
+    <form className="contact-form">
+      <div className="label-div">
+        <label className="contact-labels" htmlFor="firstName">
+          Prénom:
+        </label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          required
+          autoComplete="given-name"
+        />
       </div>
-      <div>
-        <label htmlFor="email">Email:</label>
+      <div className="label-div">
+        <label className="contact-labels" htmlFor="lastName">
+          Nom:
+        </label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          required
+          autoComplete="family-name"
+        />
+      </div>
+      <div className="label-div">
+        <label className="contact-labels" htmlFor="email">
+          Email:
+        </label>
         <input
           type="email"
           id="email"
@@ -17,8 +39,10 @@ const ContactForm = () => {
           autoComplete="email"
         />
       </div>
-      <div>
-        <label htmlFor="message">Messaggio:</label>
+      <div className="label-div">
+        <label className="contact-labels" htmlFor="message">
+          Message:
+        </label>
         <textarea
           id="message"
           name="message"
@@ -26,7 +50,7 @@ const ContactForm = () => {
           autoComplete="off"
         ></textarea>
       </div>
-      <button type="submit">Invia</button>
+      <button type="submit">Envoyer</button>
     </form>
   );
 };
