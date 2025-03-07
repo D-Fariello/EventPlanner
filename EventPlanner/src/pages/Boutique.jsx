@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "../components/"; // Import the Modal component
 
 const Boutique = ({ cart, setCart }) => {
+  // State to manage the modal visibility
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   // Function to handle incrementing quantity
   const handleIncrement = (index) => {
     const updatedCart = [...cart];
@@ -17,8 +21,15 @@ const Boutique = ({ cart, setCart }) => {
     }
   };
 
-  // Calculate total quantity
-  const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0);
+  // Function to open the modal
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  // Function to close the modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="boutique-div">
@@ -48,13 +59,20 @@ const Boutique = ({ cart, setCart }) => {
         </div>
       )}
 
-      {/* Display the total quantity */}
       <div className="cart-summary">
         <h3 className="boutique-h3">
-          Total des articles : {totalQuantity}{" "}
-          {/* This will show the total quantity */}
+          Total des articles :{" "}
+          {cart.reduce((total, item) => total + item.quantity, 0)}
         </h3>
       </div>
+
+      {/* Button to trigger modal */}
+      <button onClick={openModal} className="buy-button">
+        Acheter
+      </button>
+
+      {/* Modal Component */}
+      <Modal isOpen={isModalOpen} closeModal={closeModal} />
     </div>
   );
 };
