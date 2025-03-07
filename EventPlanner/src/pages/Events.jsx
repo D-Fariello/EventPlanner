@@ -3,7 +3,7 @@ import eventsData from "../utils/eventsData";
 import { Link } from "react-router-dom";
 
 const Events = ({ addToCart }) => {
-  const [quantities, setQuantities] = useState(eventsData.map(() => 1));
+  const [quantities, setQuantities] = useState(eventsData.map(() => 0));
 
   const handleIncrement = (index) => {
     setQuantities((prev) => prev.map((q, i) => (i === index ? q + 1 : q)));

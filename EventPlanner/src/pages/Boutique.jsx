@@ -6,7 +6,7 @@ const Boutique = ({ cart }) => {
       <h1 className="boutique-h1">Votre Panier</h1>
 
       {cart.length === 0 ? (
-        <p>Votre panier est vide.</p>
+        <p className="boutique-paragraph">Votre panier est vide.</p>
       ) : (
         <div className="cart-items">
           {cart.map((item, index) => (
@@ -15,17 +15,16 @@ const Boutique = ({ cart }) => {
                 className="cart-item-image"
                 src={item.imageUrl}
                 alt={item.title}
-                style={{ width: "100px", height: "100px", objectFit: "cover" }}
               />
               <h3>{item.title}</h3>
-              <p>Quantité: {item.quantity}</p>
+              <p className="boutique-paragraph">Quantité: {item.quantity}</p>
             </div>
           ))}
         </div>
       )}
 
       <div className="cart-summary">
-        <h3>Total des articles : {cart.length}</h3>
+        <h3 className="boutique-h3">Total des articles : {cart.length}</h3>
       </div>
     </div>
   );

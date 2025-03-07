@@ -13,4 +13,16 @@
     background-color: variables.$second-background-color;
     margin: 0;
     color: black;
-}}
+
+}
+
+.boutique-paragraph, .boutique-h3{
+    color: black;
+}
+
+img.cart-item-image {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+}
