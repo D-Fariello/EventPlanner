@@ -17,7 +17,7 @@ const Boutique = ({ cart, setCart }) => {
     }
   };
 
-  // Calculate total quantity (or price if you need it)
+  // Calculate total quantity
   const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (

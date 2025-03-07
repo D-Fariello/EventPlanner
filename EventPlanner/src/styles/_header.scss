@@ -53,6 +53,13 @@ header {
     flex-wrap: nowrap; 
     margin: 30px;
     gap: 30px;
+
+    span.cart-count {
+      font-size: 20px;
+      position: absolute;
+      top: -5px;
+    }
+
 }
 
 .contact-button{

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ totalQuantity }) => {
   return (
     <header>
       <div className="header-left">
@@ -36,6 +36,9 @@ const Header = () => {
       <div className="header-right">
         <Link to="/boutique">
           <i className="fas fa-shopping-cart"></i>{" "}
+          {totalQuantity > 0 && (
+            <span className="cart-count">{totalQuantity}</span>
+          )}
           {/* Usa la tua icona preferita */}
         </Link>
 

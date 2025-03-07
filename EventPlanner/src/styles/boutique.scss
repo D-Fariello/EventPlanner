@@ -25,4 +25,13 @@ img.cart-item-image {
     width: 300px;
     object-fit: cover;
 }
+
+.quantity-input {
+    color: black;
+
+    span.quantity-number {
+        padding: 10px;
+    }
+}
+
 }
