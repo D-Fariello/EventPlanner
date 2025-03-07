@@ -12,8 +12,8 @@ const Apropos = () => {
           className="image-about-me"
         />
         <div className="text-container">
-          <h2 className="title"> Bonjour, je m’appelle Dalila </h2>
-          <p className="paragraph">
+          <h2 className="apropos-title"> Bonjour, je m’appelle Dalila </h2>
+          <p className="apropos-paragraph">
             Italienne et toujours animée par une énergie débordante, j’ai un
             esprit curieux et une nature profondément sociable. Passionnée de
             sport et d’aventures, j’ai eu la chance de vivre dans plusieurs

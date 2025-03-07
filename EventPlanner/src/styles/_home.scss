@@ -13,13 +13,18 @@ section.home-first-section {
 }
 
 section.home-third-section {
-  margin-top: 40px;
-  margin-bottom: 80px;
+  background-color: variables.$second-background-color;
+  padding: 40px 0 80px 0;
 
   h2.home-third-section-title {
     display: flex;
     justify-content: center;
+    color: black;
   }
+
+  .home-column-title, .home-column-text, .home-link {
+    color: black;
+}
 
   .home-row {
     display: flex;

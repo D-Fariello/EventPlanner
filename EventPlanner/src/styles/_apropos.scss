@@ -1,9 +1,16 @@
+@use "variables";
+
 .section-reverse {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-color: variables.$second-background-color;
+    padding: 60px 0px 60px 0;
 
+    .apropos-title, .apropos-paragraph{
+        color: black;
+    }
 
 .text-container {
     display: flex;
@@ -32,7 +39,6 @@ img.image-about-me {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    margin-top: 70px;
     margin-bottom: 70px;
     border-top: 2px solid white;
     border-width: 50%;
