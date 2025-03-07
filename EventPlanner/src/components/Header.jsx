@@ -13,7 +13,7 @@ const Header = () => {
           <i className="fab fa-instagram"></i>
         </a>
       </div>
-      <h1>
+      <h1 className="li-nav">
         <Link to="/">Riviera Féminine</Link>
       </h1>
       <nav className="header-nav">

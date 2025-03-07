@@ -1,8 +1,16 @@
 @use 'variables';
 
-h1.boutique-h1 {
+
+.boutique-div{
+ background-color: variables.$second-background-color;
+ padding: 80px;
+
+
+.boutique-h1 {
     display: flex;
     justify-content: center;
-    margin: 40px;
     text-align: center;
-}
+    background-color: variables.$second-background-color;
+    margin: 0;
+    color: black;
+}}
