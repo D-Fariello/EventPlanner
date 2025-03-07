@@ -13,7 +13,22 @@ const App = () => {
   const [cart, setCart] = useState([]); // State to hold cart items
 
   const addToCart = (event) => {
-    setCart((prevCart) => [...prevCart, event]); // Add event to the cart
+    setCart((prevCart) => {
+      // Check if the item is already in the cart
+      const existingItemIndex = prevCart.findIndex(
+        (cartItem) => cartItem.title === event.title
+      );
+
+      if (existingItemIndex !== -1) {
+        // If the event already exists, update its quantity
+        const updatedCart = [...prevCart];
+        updatedCart[existingItemIndex].quantity += event.quantity;
+        return updatedCart;
+      } else {
+        // If the event doesn't exist, add it to the cart
+        return [...prevCart, event];
+      }
+    });
   };
 
   return (
@@ -23,7 +38,10 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events addToCart={addToCart} />} />
         <Route path="/a-propos" element={<Apropos />} />
-        <Route path="/boutique" element={<Boutique cart={cart} />} />
+        <Route
+          path="/boutique"
+          element={<Boutique cart={cart} setCart={setCart} />}
+        />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
