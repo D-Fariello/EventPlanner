@@ -1,85 +1,94 @@
+@use "variables";
+
 /* Modal container - this covers the entire screen */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.20);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;  
-    visibility: hidden;  
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s ease;  
-  }
-  
-  /* Modal content box */
-  .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 400px;
-    height: 400px;
-    background-color: #fffef8;  
-    border-radius: 2%;
-    padding: 30px 30px 50px 30px; 
-    display: block;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);  
-    animation: modalFadeIn 0.3s ease-out;  
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
 
-  .modal-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
+/* Modal content box */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background-color: #fffef8;
+  border-radius: 2%;
+  padding: 30px 30px 50px 30px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
 
   .modal-h2 {
     color: black;
     display: flex;
     text-align: center;
-}
+    text-decoration: underline;
+  }
 
-.modal-paragraph {
+  .modal-paragraph {
     color: black;
     display: flex;
     text-align: center;
-}
-.modal-form {
+    font-size: 15px;
+  }
+  .modal-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     .modal-label {
-        color: black;
-        display: flex;
-        flex-direction: column;
+      color: black;
+      display: flex;
+      flex-direction: column;
 
-        #email,#text,#tell{
-            padding: 7px;
-            border: 1px solid black;
-        }
+      #email,
+      #text,
+      #tell {
+        padding: 7px;
+        border: 1px solid black;
+      }
     }
+  }
 }
 
+/* Modal close button */
+.close-modal-button {
+  background-color: #fffef8;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
-  
-  /* Modal close button */
-  .close-modal-button {
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  
-  /* When modal is open, we override visibility and opacity */
-  .modal-overlay.open {
-    visibility: visible;
-    opacity: 1;
-  }
-  
+
+.send-button {
+  background-color: #fffef8;
+  cursor: pointer;
+}
+
+/* When modal is open, we override visibility and opacity */
+.modal-overlay.open {
+  visibility: visible;
+  opacity: 1;
+}

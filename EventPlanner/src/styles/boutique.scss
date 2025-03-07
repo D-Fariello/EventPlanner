@@ -16,7 +16,35 @@
 
 }
 
-.boutique-paragraph, .boutique-h3{
+.cart-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+
+    .cart-item {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
+
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.boutique-h3 {
+    color: red;
+}
+
+.boutique-paragraph{
     color: black;
 }
 
@@ -31,6 +59,13 @@ img.cart-item-image {
 
     span.quantity-number {
         padding: 10px;
+    }
+
+    svg.trash-icon {
+        align-items: center;
+        margin-left: 50px;
+        font-size: 20px;
+        cursor: pointer;
     }
 }
 

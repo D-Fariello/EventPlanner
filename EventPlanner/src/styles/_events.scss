@@ -23,6 +23,11 @@ h1.event-paragraph {
   align-items: center;
   margin-top: 60px;
   margin-bottom: 60px;
+  background-color: variables.$second-background-color;
+
+  .subtitle-event, .title-event, .paragraph-event {
+    color: black;
+}
 
   .events-list {
     display: flex;

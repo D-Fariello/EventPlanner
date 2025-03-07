@@ -37,9 +37,9 @@ const Events = ({ addToCart }) => {
               src={event.imageUrl}
               alt={`Event ${index + 1}`}
             />
-            <h2>{event.title}</h2>
-            <h3>{event.subtitle}</h3>
-            <p>{event.description}</p>
+            <h2 className="title-event">{event.title}</h2>
+            <h3 className="subtitle-event">{event.subtitle}</h3>
+            <p className="paragraph-event">{event.description}</p>
 
             <div className="quantity-input">
               <button onClick={() => handleDecrement(index)}>-</button>

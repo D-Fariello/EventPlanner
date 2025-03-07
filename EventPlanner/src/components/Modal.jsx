@@ -31,7 +31,7 @@ const Modal = ({ isOpen, closeModal }) => {
   return (
     <div className="modal">
       <div className="modal-content">
-        <h2 className="modal-h2">Vous ne payez rien pour le moment.</h2>
+        <h2 className="modal-h2">Vous ne payez rien pour le moment!</h2>
         <p className="modal-paragraph">
           Nous devons d'abord créer un devis pour vous. Je serai en contact avec
           vous pour vous donner tous les détails.
@@ -74,7 +74,9 @@ const Modal = ({ isOpen, closeModal }) => {
               required
             />
           </label>
-          <button type="submit">Envoyer</button>
+          <button className="send-button" type="submit">
+            Envoyer
+          </button>
         </form>
 
         <button onClick={closeModal} className="close-modal-button">
