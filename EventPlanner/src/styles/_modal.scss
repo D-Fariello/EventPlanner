@@ -56,6 +56,13 @@
 
     .modal-label {
         color: black;
+        display: flex;
+        flex-direction: column;
+
+        #email,#text,#tell{
+            padding: 7px;
+            border: 1px solid black;
+        }
     }
 }
 

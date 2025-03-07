@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "../components/"; // Import the Modal component
+import Modal from "../components/Modal"; // Import the Modal component
 
 const Boutique = ({ cart, setCart }) => {
   // State to manage the modal visibility

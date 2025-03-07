@@ -41,6 +41,7 @@ const Modal = ({ isOpen, closeModal }) => {
           <label className="modal-label">
             Nom:
             <input
+              id="text"
               type="text"
               name="name"
               placeholder="Votre nom"
@@ -52,6 +53,7 @@ const Modal = ({ isOpen, closeModal }) => {
           <label className="modal-label">
             Email:
             <input
+              id="email"
               type="email"
               name="email"
               placeholder="Votre email"
@@ -63,6 +65,7 @@ const Modal = ({ isOpen, closeModal }) => {
           <label className="modal-label">
             Téléphone:
             <input
+              id="tell"
               type="tel"
               name="phone"
               placeholder="Votre téléphone"
