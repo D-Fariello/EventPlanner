@@ -67,3 +67,111 @@ header {
     font-family: variables.$font-paragraph;
     font-size: 13px;
 }
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 1024px) {
+  /* Burger Menu */
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    span {
+      display: block;
+      width: 30px;
+      height: 4px;
+      background-color: variables.$text-color;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  }
+
+  /* Hide the navigation menu by default on tablet */
+  .header-nav {
+    display: none;
+  }
+
+  .header-right {
+    display: none;
+}
+
+  /* Show navigation when menu is open */
+  .header-nav.active {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: variables.$background-color;
+    padding-top: 60px; /* Add space from top */
+    z-index: 999;
+  }
+
+  .ul-nav {
+    display: flex
+;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+}
+
+@media (max-width: 768px) {
+  /* Burger Menu */
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    span {
+      display: block;
+      width: 30px;
+      height: 4px;
+      background-color: variables.$text-color;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  }
+
+  /* Hide the navigation menu by default on mobile */
+  .header-nav {
+    display: none;
+  }
+
+  /* Show navigation when menu is open */
+  .header-nav.active {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: variables.$background-color;
+    padding-top: 60px; /* Add space from top */
+    z-index: 999;
+  }
+  .ul-nav {
+    display: flex
+;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+}

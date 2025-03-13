@@ -2,6 +2,7 @@
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     background-color: variables.$background-color;
     color: #FFFFFF;
     text-align: center;

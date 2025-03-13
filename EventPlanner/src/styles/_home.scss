@@ -53,6 +53,7 @@ section.home-third-section {
 .home-event-planning-section {
 
     border-top: 2px solid white;
+    padding: 0 15px;
 
   .home-event-planning-row {
     display: flex;
@@ -82,6 +83,122 @@ section.home-third-section {
 
     a.home-event-planning-link {
       text-decoration: underline;
+    }
+  }
+}
+
+
+// Tablet (769px > 1024px)
+@media (max-width: 1024px) and (min-width: 769px) {
+  section.home-first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .home-img {
+    height: 500px;
+  }
+
+  section.home-third-section {
+    padding: 40px 20px 60px 20px;
+
+    h2.home-third-section-title {
+      font-size: 24px;
+    }
+
+    .home-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .home-column {
+      margin: 10px 0;
+    }
+  }
+
+  .home-event-planning-section {
+    .home-event-planning-row {
+      flex-direction: column;
+      margin: 20px 0;
+    }
+
+    .home-event-planning-image-left-img {
+      height: 250px;
+    }
+
+    .event-options {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .event-options-column {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// Mobile (320px > 768px)
+@media (max-width: 768px) {
+
+  h1, h2, h3{
+    font-size: 17px;
+  }
+
+  section.home-first-section {
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-img {
+    height: 400px;
+  }
+
+  section.home-third-section {
+    padding: 30px 10px 50px 10px;
+
+    h2.home-third-section-title {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .home-row {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    .home-column {
+      margin: 10px 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .home-event-planning-section {
+    .home-event-planning-row {
+      flex-direction: column;
+      margin: 10px 0;
+    }
+
+    .home-event-planning-image-left-img {
+      height: 200px;
+      margin: 10px 0;
+    }
+
+    .event-options {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 30px;
+
+      .event-options-column {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
     }
   }
 }
