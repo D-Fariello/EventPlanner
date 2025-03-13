@@ -1,3 +1,4 @@
+
 @use "variables";
 
 .section-reverse {
@@ -56,7 +57,7 @@ img.image-about-me {
     align-content: center;
 }
 
-img.image-about-me {
+.image-about-me {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -66,3 +67,54 @@ img.image-about-me {
     margin-top: 70px;
 }
 }
+
+/* Tablet: 769px > 1024px */
+@media (max-width: 1024px) {
+    .section-reverse, .section {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 40px 20px;
+    }
+  
+    .text-container {
+      width: 80% !important;
+      margin-left: 0;
+      margin-right: 0;
+      align-items: center;
+    }
+  
+    .image-about-me {
+      width: 80% !important;
+      height: auto;
+      margin: 20px 0 !important;
+      object-fit: cover;
+    }
+  }
+  
+  /* Mobile: 320px > 768px */
+  @media (max-width: 768px) {
+    .section-reverse, .section {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 20px 10px;
+    }
+  
+    .text-container {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      align-items: center;
+    }
+  
+    .image-about-me {
+      width: 100%;
+      height: auto;
+      margin: 20px 0 !important;
+      object-fit: cover;
+    }
+  
+    .apropos-title, .apropos-paragraph {
+      font-size: 1rem;
+    }
+  }
+  
