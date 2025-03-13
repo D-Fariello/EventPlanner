@@ -43,3 +43,39 @@
     }
 }
 
+  /// Tablet (769px > 1024px)
+@media (max-width: 1024px) and (min-width: 769px) {
+    .contact-div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-me-info,
+    .contact-form {
+        width: 80% !important;
+    }
+}
+
+// Mobile (320px > 768px)
+@media (max-width: 768px) {
+    .contact-div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-me-info,
+    .contact-form {
+        width: 80% !important;;
+    }
+
+    .contact-labels {
+        font-size: 16px;
+    }
+
+    .label-div {
+        #firstName, #lastName, #email, #message {
+            padding: 10px;
+        }
+    }
+}
+
