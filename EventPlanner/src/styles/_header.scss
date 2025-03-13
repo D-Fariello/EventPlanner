@@ -115,13 +115,13 @@ header {
   }
 
   .ul-nav {
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding-left: 0;
 }
 }
 
@@ -166,12 +166,12 @@ header {
     z-index: 999;
   }
   .ul-nav {
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding-left: 0;
 }
 }
