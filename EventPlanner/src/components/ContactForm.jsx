@@ -1,55 +1,75 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  const form = useRef();
+  const [status, setStatus] = useState({ message: "", type: "" });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        { publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY }
+      )
+      .then(
+        () => {
+          setStatus({
+            message: "Message envoyé avec succès!",
+            type: "success",
+          });
+          form.current.reset();
+        },
+        (error) => {
+          setStatus({ message: "Échec de l'envoi. Réessayez.", type: "error" });
+          console.error("Erreur:", error.text);
+        }
+      );
+  };
+
   return (
-    <form className="contact-form">
+    <form ref={form} className="contact-form" onSubmit={sendEmail}>
+      {status.message && (
+        <p
+          className={
+            status.type === "success" ? "success-message" : "error-message"
+          }
+        >
+          {status.message}
+        </p>
+      )}
+
       <div className="label-div">
         <label className="contact-labels" htmlFor="firstName">
           Prénom:
         </label>
-        <input
-          type="text"
-          id="firstName"
-          name="firstName"
-          required
-          autoComplete="given-name"
-        />
+        <input type="text" id="firstName" name="firstName" required />
       </div>
+
       <div className="label-div">
         <label className="contact-labels" htmlFor="lastName">
           Nom:
         </label>
-        <input
-          type="text"
-          id="lastName"
-          name="lastName"
-          required
-          autoComplete="family-name"
-        />
+        <input type="text" id="lastName" name="lastName" required />
       </div>
+
       <div className="label-div">
         <label className="contact-labels" htmlFor="email">
           Email:
         </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          autoComplete="email"
-        />
+        <input type="email" id="email" name="email" required />
       </div>
+
       <div className="label-div">
         <label className="contact-labels" htmlFor="message">
           Message:
         </label>
-        <textarea
-          id="message"
-          name="message"
-          required
-          autoComplete="off"
-        ></textarea>
+        <textarea id="message" name="message" required></textarea>
       </div>
+
       <button type="submit">Envoyer</button>
     </form>
   );
