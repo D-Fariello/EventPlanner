@@ -16,6 +16,10 @@ h1.event-paragraph {
   text-align: center;
 }
 
+.event-first-section {
+  background-color: #e7dacb;
+
+
 .events-information {
   display: flex;
   flex-direction: row;
@@ -27,6 +31,8 @@ h1.event-paragraph {
   .subtitle-event, .title-event, .paragraph-event {
     color: black;
     font-size: 15px;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
 }
 
   .events-list {
@@ -35,7 +41,7 @@ h1.event-paragraph {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
 
     .event-option-images {
       height: 200px;
@@ -52,6 +58,14 @@ h1.event-paragraph {
 
   .quantity-number{
     padding: 20px;
+}
+}
+.info-prices {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 19px;
+  font-size: 14px;
+  color: black;
 }
 }
 

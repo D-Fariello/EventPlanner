@@ -53,12 +53,18 @@ const Events = ({ addToCart }) => {
               }
             >
               <Link className="contact-button" to="/boutique">
-                Ajouter au panier
+                Choisir
               </Link>
             </button>
           </div>
         ))}
       </div>
+      <p className="info-prices">
+        *Le prix varie en fonction des options choisies pour l'événement et du
+        nombre de participants. Les événements sont généralement organisés pour
+        des groupes d'au moins 5 personnes (pas obligatoirement). Pour chaque
+        groupe, sélectionnez une quantité.
+      </p>
     </div>
   );
 };
