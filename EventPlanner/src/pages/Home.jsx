@@ -15,7 +15,7 @@ const Home = () => {
       <section className="home-second-section">
         <img
           className="home-img"
-          src="/images/homeImage.png"
+          src="/images/photo_pc_1.jpg"
           alt="Inspiring Experiences"
         />
       </section>
@@ -77,7 +77,7 @@ const Home = () => {
           <div className="image-div">
             <img
               className="home-event-planning-image-left-img"
-              src="/images/eatingFood.png"
+              src="/images/photo_smile_1.jpg"
               alt="Event Planning"
             />
           </div>
