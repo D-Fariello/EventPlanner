@@ -1,6 +1,6 @@
 const eventsData = [
   {
-    imageUrl: "/images/beateau.jpg",
+    imageUrl: "/images/bateau.jpg",
     title: "Journée en bateau",
     // subtitle: "Prix : 120€ par personne",
     description: "Embarquez pour une journée inoubliable en mer, avec baignade, détente et apéritif au coucher du soleil.",
