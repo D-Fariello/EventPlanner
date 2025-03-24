@@ -58,6 +58,11 @@ const Apropos = () => {
             offrir des expériences authentiques, originales et adaptées à vos
             envies.
           </p>
+          <button>
+            <Link className="contact-button" to="/contact">
+              Prendre rendez-vous
+            </Link>
+          </button>
         </div>
       </div>
     </div>

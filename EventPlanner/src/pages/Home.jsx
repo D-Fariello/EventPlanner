@@ -31,9 +31,9 @@ const Home = () => {
               Le choix idéal pour des événements privés et personnalisés,
               adaptés à vos envies et à votre style de vie.
             </p>
-            <a href="/events" className="home-link">
+            <button href="/events" className="home-link">
               En savoir plus
-            </a>
+            </button>
           </div>
 
           {/* Row 2: Sorties & Rencontres */}
@@ -43,9 +43,9 @@ const Home = () => {
               Découvrez des événements exclusifs pour partager des moments
               uniques et créer de nouvelles connexions.
             </p>
-            <a href="/events" className="home-link">
+            <button href="/events" className="home-link">
               En savoir plus
-            </a>
+            </button>
           </div>
 
           {/* Row 3: Événements en direct */}
@@ -55,9 +55,9 @@ const Home = () => {
               Plongez dans des expériences inoubliables avec nos soirées,
               ateliers et escapades spécialement conçus pour vous.
             </p>
-            <a href="/events" className="home-link">
+            <button href="/events" className="home-link">
               En savoir plus
-            </a>
+            </button>
           </div>
         </div>
       </section>
