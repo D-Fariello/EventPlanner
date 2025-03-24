@@ -2,18 +2,6 @@ import React, { useState } from "react";
 import eventsData from "../utils/eventsData";
 
 const Events = () => {
-  const [quantities, setQuantities] = useState(eventsData.map(() => 0));
-
-  const handleIncrement = (index) => {
-    setQuantities((prev) => prev.map((q, i) => (i === index ? q + 1 : q)));
-  };
-
-  const handleDecrement = (index) => {
-    setQuantities((prev) =>
-      prev.map((q, i) => (i === index && q > 1 ? q - 1 : q))
-    );
-  };
-
   return (
     <div className="event-first-section">
       <div>
@@ -39,12 +27,6 @@ const Events = () => {
             <h2 className="title-event">{event.title}</h2>
             <h3 className="subtitle-event">{event.subtitle}</h3>
             <p className="paragraph-event">{event.description}</p>
-
-            <div className="quantity-input">
-              <button onClick={() => handleDecrement(index)}>-</button>
-              <span className="quantity-number">{quantities[index]}</span>
-              <button onClick={() => handleIncrement(index)}>+</button>
-            </div>
           </div>
         ))}
       </div>
