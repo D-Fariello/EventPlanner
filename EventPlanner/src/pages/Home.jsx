@@ -89,7 +89,7 @@ const Home = () => {
           <div className="image-div" data-aos="fade-right">
             <img
               className="home-event-planning-image-left-img"
-              src="/images/photo_smile_1.jpg"
+              src="/images/photo_smile_1.avif"
               alt="Event Planning"
             />
           </div>
