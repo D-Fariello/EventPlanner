@@ -8,6 +8,10 @@ const Header = ({ totalQuantity }) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header>
       <div className="header-left">
@@ -31,28 +35,42 @@ const Header = ({ totalQuantity }) => {
       </div>
 
       <h1 className="li-nav">
-        <Link to="/">Riviera Féminine</Link>
+        <Link to="/" onClick={handleLinkClick}>
+          Riviera Féminine
+        </Link>
       </h1>
       <nav className={`header-nav ${isMenuOpen ? "active" : ""}`}>
         <ul className="ul-nav">
           <li className="li-nav">
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={handleLinkClick}>
+              Home
+            </Link>
           </li>
           <li className="li-nav">
-            <Link to="/a-propos">À propos</Link>
+            <Link to="/a-propos" onClick={handleLinkClick}>
+              À propos
+            </Link>
           </li>
           <li className="li-nav">
-            <Link to="/events">Événements</Link>
+            <Link to="/events" onClick={handleLinkClick}>
+              Événements
+            </Link>
           </li>
           <li className="li-nav">
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={handleLinkClick}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
 
       <div className="header-right">
         <button>
-          <Link className="contact-button" to="/contact">
+          <Link
+            className="contact-button"
+            to="/contact"
+            onClick={handleLinkClick}
+          >
             Contactez-moi
           </Link>
         </button>
