@@ -8,8 +8,7 @@ const Footer = () => {
       <div className="footer-top">
         <div className="footer-brand">
           <h3 className="company-name">Riviera Féminine</h3>
-          <p className="company-email">info@example.com</p>
-          <p className="company-address">123 Rue de la Mode, Paris, France</p>
+          <p className="company-address">Nice, France</p>
         </div>
 
         <div className="footer-socials">
