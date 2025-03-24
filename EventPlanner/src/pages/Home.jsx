@@ -1,4 +1,5 @@
 import React from "react";
+import ImageCarousel from "../components/ImageCarousel";
 
 const Home = () => {
   return (
@@ -13,11 +14,7 @@ const Home = () => {
 
       {/* Image Section */}
       <section className="home-second-section">
-        <img
-          className="home-img"
-          src="/images/photo_pc_1.jpg"
-          alt="Inspiring Experiences"
-        />
+        <ImageCarousel />
       </section>
 
       {/* CHOISISSEZ Riviera Féminine Section */}
