@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import eventsData from "../utils/eventsData";
-import { Link } from "react-router-dom";
 
-const Events = ({ addToCart }) => {
+const Events = () => {
   const [quantities, setQuantities] = useState(eventsData.map(() => 0));
 
   const handleIncrement = (index) => {
@@ -46,16 +45,6 @@ const Events = ({ addToCart }) => {
               <span className="quantity-number">{quantities[index]}</span>
               <button onClick={() => handleIncrement(index)}>+</button>
             </div>
-
-            <button
-              onClick={() =>
-                addToCart({ ...event, quantity: quantities[index] })
-              }
-            >
-              <Link className="contact-button" to="/boutique">
-                Choisir
-              </Link>
-            </button>
           </div>
         ))}
       </div>

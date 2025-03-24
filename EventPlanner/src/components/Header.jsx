@@ -36,13 +36,13 @@ const Header = ({ totalQuantity }) => {
       <nav className={`header-nav ${isMenuOpen ? "active" : ""}`}>
         <ul className="ul-nav">
           <li className="li-nav">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="li-nav">
             <Link to="/a-propos">À propos</Link>
           </li>
           <li className="li-nav">
             <Link to="/events">Événements</Link>
-          </li>
-          <li className="li-nav">
-            <Link to="/boutique">Boutique</Link>
           </li>
           <li className="li-nav">
             <Link to="/contact">Contact</Link>
@@ -51,14 +51,6 @@ const Header = ({ totalQuantity }) => {
       </nav>
 
       <div className="header-right">
-        <Link to="/boutique">
-          <i className="fas fa-shopping-cart"></i>{" "}
-          {totalQuantity > 0 && (
-            <span className="cart-count">{totalQuantity}</span>
-          )}
-          {/* Usa la tua icona preferita */}
-        </Link>
-
         <button>
           <Link className="contact-button" to="/contact">
             Contactez-moi
