@@ -1,6 +1,6 @@
 const eventsData = [
   {
-    imageUrl: "/images/bateau.jpg",
+    imageUrl: "/images/bateau.avif",
     title: "Journée en bateau",
     time: "Lundi, 09:15",
     day: "21",
@@ -9,7 +9,7 @@ const eventsData = [
     description: "Embarquez pour une journée inoubliable en mer, avec baignade, détente et apéritif au coucher du soleil.",
   },
   {
-    imageUrl: "/images/ceramic.jpg",
+    imageUrl: "/images/ceramic.avif",
     title: "Atelier de céramique",
     time: "Mardi, 11:00",
     day: "18",
@@ -18,7 +18,7 @@ const eventsData = [
     description: "Découvrez l'art de la poterie et créez votre propre pièce unique sous la guidance d'un expert.",
   },
   {
-    imageUrl: "/images/women-party.jpg",
+    imageUrl: "/images/women-party.avif",
     title: "Soirée entre femmes",
     time: "Vendredi, 14:30",
     day: "10",
@@ -27,7 +27,7 @@ const eventsData = [
     description: "Une soirée conviviale entre femmes, avec discussions inspirantes, cocktails et animations surprises.",
   },
   {
-    imageUrl: "/images/doctor-part.jpg",
+    imageUrl: "/images/doctor-part.avif",
     title: "Journée avec une Doc",
     time: "Samedi, 10:00",
     day: "30",

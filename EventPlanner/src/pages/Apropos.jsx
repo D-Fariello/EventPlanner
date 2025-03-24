@@ -13,7 +13,7 @@ const Apropos = () => {
       {/* Section 1: Image Left, Text Right */}
       <div className="section-reverse">
         <img
-          src="/images/photo_pc_4.jpg"
+          src="/images/photo_pc_4.avif"
           alt="About us"
           className="image-about-me"
           data-aos="fade-right"
@@ -51,7 +51,7 @@ const Apropos = () => {
       {/* Section 2: Image Right, Text Left */}
       <div className="section">
         <img
-          src="/images/photo_pc_3.jpg"
+          src="/images/photo_pc_3.avif"
           alt="Our mission"
           className="image-about-me"
           data-aos="fade-left"
