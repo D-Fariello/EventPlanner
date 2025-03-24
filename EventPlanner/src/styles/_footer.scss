@@ -1,39 +1,65 @@
 @use 'variables';
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: variables.$background-color;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 20px;
-    justify-content: space-between;
-    border-top: solid 2px white;
+  display: flex;
+  flex-direction: column;
+  background-color: variables.$background-color;
+  color: #ffffff;
+  padding: 20px;
+  border-top: solid 2px white;
 
-    a {
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .company-name {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .company-email,
+      .company-address {
+        font-size: 14px;
+        margin: 2px 0;
+      }
+    }
+
+    .footer-socials {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      a {
         color: variables.$secondary-color;
-        margin: 0 10px;
+        font-size: 22px;
+        transition: transform 0.3s ease;
 
         &:hover {
-            color: variables.$hover-color;
+          color: variables.$hover-color;
+          transform: scale(1.2);
         }
+      }
     }
+  }
 
-    .subscription-section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .footer-bottom {
+    text-align: center;
+    font-size: 13px;
+    color: variables.$secondary-color;
+    border-top: 1px solid variables.$secondary-color;
+    padding-top: 10px;
+  }
 
-    .company-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    input.email-input {
-        border: solid;
-        padding: 20px;
-        background-color: white;
-    }
+  p.copyrights {
+    font-size: 13px;
+}
 }
