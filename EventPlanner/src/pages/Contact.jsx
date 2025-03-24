@@ -7,8 +7,11 @@ const Contact = () => {
       <div className="contact-me-info">
         <h2 className="contact-h2">Me contacter</h2>
         <p className="contact-paragraph">
-          Pour toute demande de renseignements sur les événements ou pour toute
-          autre demande, n’hésitez pas à me contacter ici.
+          Vous souhaitez en savoir plus sur un événement ou vivre une expérience
+          sur-mesure ? <br />
+          Pour toute question ou demande spécifique, n’hésitez pas à me
+          contacter ici — je vous répondrai dans les meilleurs délais, sous 48h
+          maximum.
         </p>
       </div>
       <ContactForm />

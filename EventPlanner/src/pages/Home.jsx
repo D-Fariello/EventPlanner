@@ -1,15 +1,18 @@
 import React from "react";
 import ImageCarousel from "../components/ImageCarousel";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="home-container">
       {/* First Section */}
       <section className="home-first-section">
-        <h2 className="home-first-section-title">Votre guide inspiré pour</h2>
-        <h3 className="home-first-section-subtitle">
-          Des expériences uniques et des souvenirs inoubliables
-        </h3>
+        <h2 className="home-first-section-title">
+          {" "}
+          Je vous accompagne dans des expériences authentiques, pleines de
+          charme et d’émotion
+        </h2>
+        <p className="home-first-section-subtitle">Basée à Nice</p>
       </section>
 
       {/* Image Section */}
@@ -31,8 +34,10 @@ const Home = () => {
               Le choix idéal pour des événements privés et personnalisés,
               adaptés à vos envies et à votre style de vie.
             </p>
-            <button href="/events" className="home-link">
-              En savoir plus
+            <button>
+              <Link className="contact-button" to="/contact">
+                En savoir plus
+              </Link>
             </button>
           </div>
 
@@ -43,8 +48,10 @@ const Home = () => {
               Découvrez des événements exclusifs pour partager des moments
               uniques et créer de nouvelles connexions.
             </p>
-            <button href="/events" className="home-link">
-              En savoir plus
+            <button>
+              <Link className="contact-button" to="/contact">
+                En savoir plus
+              </Link>
             </button>
           </div>
 
@@ -55,8 +62,10 @@ const Home = () => {
               Plongez dans des expériences inoubliables avec nos soirées,
               ateliers et escapades spécialement conçus pour vous.
             </p>
-            <button href="/events" className="home-link">
-              En savoir plus
+            <button>
+              <Link className="contact-button" to="/contact">
+                En savoir plus
+              </Link>
             </button>
           </div>
         </div>
