@@ -20,35 +20,35 @@ const ImageCarousel = () => {
       <div>
         <img
           className="home-img"
-          src="/images/ceramic.jpg"
+          src="/images/ceramic.avif"
           alt="Experience 1"
         />
       </div>
       <div>
         <img
           className="home-img"
-          src="/images/doctor-part.jpg"
+          src="/images/doctor-part.avif"
           alt="Experience 2"
         />
       </div>
       <div>
         <img
           className="home-img"
-          src="/images/cocktails.jpg"
+          src="/images/cocktails.avif"
           alt="Experience 3"
         />
       </div>
       <div>
         <img
           className="home-img"
-          src="/images/women-party.jpg"
+          src="/images/women-party.avif"
           alt="Experience 4"
         />
       </div>
       <div>
         <img
           className="home-img"
-          src="/images/photo_pc_5.jpg"
+          src="/images/photo_pc_5.avif"
           alt="Experience 5"
         />
       </div>
