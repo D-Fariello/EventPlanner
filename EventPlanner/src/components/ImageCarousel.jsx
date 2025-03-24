@@ -48,7 +48,7 @@ const ImageCarousel = () => {
       <div>
         <img
           className="home-img"
-          src="/images/photo_pc_5.avif"
+          src="/images/photo_pc_1.jpg"
           alt="Experience 5"
         />
       </div>
