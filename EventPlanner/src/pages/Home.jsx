@@ -42,7 +42,7 @@ const Home = () => {
             </p>
             <button>
               <Link className="contact-button" to="/contact">
-                En savoir plus
+                Découvrir ces expériences
               </Link>
             </button>
           </div>
@@ -56,7 +56,7 @@ const Home = () => {
             </p>
             <button>
               <Link className="contact-button" to="/contact">
-                En savoir plus
+                Participer à une rencontre
               </Link>
             </button>
           </div>
@@ -70,7 +70,7 @@ const Home = () => {
             </p>
             <button>
               <Link className="contact-button" to="/contact">
-                En savoir plus
+                Plonger dans l’ambiance
               </Link>
             </button>
           </div>

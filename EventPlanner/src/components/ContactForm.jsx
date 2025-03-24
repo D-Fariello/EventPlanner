@@ -4,9 +4,17 @@ import emailjs from "@emailjs/browser";
 const ContactForm = () => {
   const form = useRef();
   const [status, setStatus] = useState({ message: "", type: "" });
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // Aggiorna il valore del campo nascosto
+    const fullNameField = form.current.querySelector('input[name="user_name"]');
+    if (fullNameField) {
+      fullNameField.value = `${firstName} ${lastName}`;
+    }
 
     emailjs
       .sendForm(
@@ -21,6 +29,8 @@ const ContactForm = () => {
             message: "Message envoyé avec succès!",
             type: "success",
           });
+          setFirstName("");
+          setLastName("");
           form.current.reset();
         },
         (error) => {
@@ -31,7 +41,12 @@ const ContactForm = () => {
   };
 
   return (
-    <form ref={form} className="contact-form" onSubmit={sendEmail}>
+    <form
+      ref={form}
+      className="contact-form"
+      onSubmit={sendEmail}
+      autoComplete="on"
+    >
       {status.message && (
         <p
           className={
@@ -42,32 +57,66 @@ const ContactForm = () => {
         </p>
       )}
 
+      {/* Prénom */}
       <div className="label-div">
         <label className="contact-labels" htmlFor="firstName">
           Prénom:
         </label>
-        <input type="text" id="firstName" name="firstName" required />
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+          required
+          autoComplete="given-name"
+        />
       </div>
 
+      {/* Nom */}
       <div className="label-div">
         <label className="contact-labels" htmlFor="lastName">
           Nom:
         </label>
-        <input type="text" id="lastName" name="lastName" required />
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+          required
+          autoComplete="family-name"
+        />
       </div>
 
+      {/* Hidden field for full name */}
+      <input type="hidden" name="user_name" />
+
+      {/* Email */}
       <div className="label-div">
-        <label className="contact-labels" htmlFor="email">
+        <label className="contact-labels" htmlFor="user_email">
           Email:
         </label>
-        <input type="email" id="email" name="email" required />
+        <input
+          type="email"
+          id="user_email"
+          name="user_email"
+          required
+          autoComplete="email"
+        />
       </div>
 
+      {/* Message */}
       <div className="label-div">
         <label className="contact-labels" htmlFor="message">
           Message:
         </label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea
+          id="message"
+          name="message"
+          required
+          autoComplete="off"
+        ></textarea>
       </div>
 
       <button type="submit">Envoyer</button>
