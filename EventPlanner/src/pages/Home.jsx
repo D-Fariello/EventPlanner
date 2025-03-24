@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ImageCarousel from "../components/ImageCarousel";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
+
   return (
     <div className="home-container">
       {/* First Section */}
       <section className="home-first-section">
         <h2 className="home-first-section-title">
           {" "}
-          Je vous accompagne dans des expériences authentiques, pleines de
+          Je vous accompagne dans des expériences authentiques <br /> pleines de
           charme et d’émotion
         </h2>
         <p className="home-first-section-subtitle">Basée à Nice</p>
@@ -74,21 +80,25 @@ const Home = () => {
       {/* Second Section */}
       <section className="home-event-planning-section">
         <div className="home-event-planning-row">
-          <h3 className="home-event-planning-right-title">
+          <h3 className="home-event-planning-right-title" data-aos="fade-up">
             Organisez un événement privé inoubliable
           </h3>
         </div>
 
         <div className="event-options">
-          <div className="image-div">
+          <div className="image-div" data-aos="fade-right">
             <img
               className="home-event-planning-image-left-img"
               src="/images/photo_smile_1.jpg"
               alt="Event Planning"
             />
           </div>
-          {/* Tentez une nouvelle expérience Section */}
-          <div className="event-options-column">
+
+          <div
+            className="event-options-column"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <h3 className="event-options-column-title">
               Tentez une nouvelle expérience
             </h3>
@@ -102,8 +112,12 @@ const Home = () => {
               Découvrir des idées d’événements
             </a>
           </div>
-          {/* Un événement sur mesure Section */}
-          <div className="event-options-column">
+
+          <div
+            className="event-options-column"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <h3 className="event-options-column-title">
               Un événement sur mesure
             </h3>

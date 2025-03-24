@@ -1,5 +1,9 @@
 @use "variables";
 
+h2.home-first-section-title {
+  text-align: center;
+}
+
 section.home-first-section {
   display: flex;
   flex-direction: column;
