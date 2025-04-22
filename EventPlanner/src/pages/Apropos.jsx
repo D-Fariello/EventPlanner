@@ -41,7 +41,7 @@ const Apropos = () => {
             authentiques.
           </p>
           <button>
-            <Link className="contact-button" to="/contact">
+            <Link className="contact-me-button" to="/contact">
               Prendre rendez-vous
             </Link>
           </button>
@@ -82,7 +82,7 @@ const Apropos = () => {
             et adaptées à vos envies.
           </p>
           <button>
-            <Link className="contact-button" to="/contact">
+            <Link className="contact-me-button" to="/contact">
               Prendre rendez-vous
             </Link>
           </button>

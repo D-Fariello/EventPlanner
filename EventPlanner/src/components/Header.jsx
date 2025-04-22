@@ -67,7 +67,7 @@ const Header = ({ totalQuantity }) => {
       <div className="header-right">
         <button>
           <Link
-            className="contact-button"
+            className="contact-me-button"
             to="/contact"
             onClick={handleLinkClick}
           >
