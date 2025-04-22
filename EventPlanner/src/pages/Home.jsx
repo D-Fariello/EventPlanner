@@ -40,11 +40,10 @@ const Home = () => {
               Le choix idéal pour des événements privés et personnalisés,
               adaptés à vos envies et à votre style de vie.
             </p>
-            <button>
-              <Link className="contact-button" to="/contact">
-                Découvrir ces expériences
-              </Link>
-            </button>
+
+            <Link className="contact-button" to="/contact">
+              Découvrir ces expériences
+            </Link>
           </div>
 
           {/* Row 2: Sorties & Rencontres */}
@@ -54,11 +53,10 @@ const Home = () => {
               Découvrez des événements exclusifs pour partager des moments
               uniques et créer de nouvelles connexions.
             </p>
-            <button>
-              <Link className="contact-button" to="/contact">
-                Participer à une rencontre
-              </Link>
-            </button>
+
+            <Link className="contact-button" to="/contact">
+              Participer à une rencontre
+            </Link>
           </div>
 
           {/* Row 3: Événements en direct */}
@@ -68,11 +66,10 @@ const Home = () => {
               Plongez dans des expériences inoubliables avec nos soirées,
               ateliers et escapades spécialement conçus pour vous.
             </p>
-            <button>
-              <Link className="contact-button" to="/contact">
-                Plonger dans l’ambiance
-              </Link>
-            </button>
+
+            <Link className="contact-button" to="/contact">
+              Plonger dans l’ambiance
+            </Link>
           </div>
         </div>
       </section>
